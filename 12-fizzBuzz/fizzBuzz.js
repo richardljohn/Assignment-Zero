@@ -1,23 +1,23 @@
 function fizzBuzz(start, end) {
   var arr = [];
+  var arrayIndex = 0;
   for(start; start <= end; start++){
     if((start % 3 == 0) && (start % 5 == 0)){
-      arr[start] = "FizzBuzz";
+      arr[arrayIndex] = "FizzBuzz";
     }
     else if(start % 3 == 0){
-      arr[start] = "Fizz";
+      arr[arrayIndex] = "Fizz";
     }
     else if(start % 5 == 0) {
-      arr[start] = "Buzz";
+      arr[arrayIndex] = "Buzz";
     }
     else {
-      arr[start] = start;
+      arr[arrayIndex] = start;
     }
+    arrayIndex++;
   }
   return arr;
 }
-
-console.log(fizzBuzz(1, 15));
 
 // Do not edit this line;
 module.exports = fizzBuzz;
