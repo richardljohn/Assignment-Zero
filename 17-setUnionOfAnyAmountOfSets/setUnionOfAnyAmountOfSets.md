@@ -1,4 +1,4 @@
-# 17-setUnionOfAnyAmountOfSets
+ # 17-setUnionOfAnyAmountOfSets
 
 For this exercise (`setUnionOfAnyAmountOfSets.js`), you are tasked to write out solution code for a function titled `setUnionOfAnyAmountOfSets(...args)`. This function is capable of accepting and will take in any amount of arguments. Each of these arguments passed in will be a special type of JavaScript `object` known as a `set` which will strictly contain numbers. Within any given `set`, there will be unique values. In set theory, the union of a collection of sets is the set of all elements in the collection. The business logic you provide should allow for composing and outputting a `set` that contains all of the unique values across the indefinite amount of sets passed into the function.
 
