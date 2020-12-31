@@ -1,12 +1,14 @@
 function isPalindrome(word) {
-  var stack = new Stack();
   var reverse = "";
-  for(var i = 0; i < word.length; i++){
-    stack.push(word[i]);
+  var w = 0;
+  for(var i = word.length-1; i >= 0; i--){
+    if(word[w] != word.charAt(i)){
+      return false;
+    }
+    reverse += word.charAt(i);
+    w++;
   }
-  for(var j = 0; j < word.length; j++){
-    stack.
-  }
+  return true; 
 }
 
 // Do not edit this line;
