@@ -21,13 +21,25 @@ class MySolution {
   //   }
   // }
   binarySearch(nums, target, start, end){
-    
+    if(start > end){
+      return false;
+    }
+    var mid = Math.floor((start+end)/2);
+    if(nums[mid] == target){
+      return true; 
+    }
+    else if(target > nums[mid]){
+      return this.binarySearch(nums, target, mid+1, end);
+    }
+    else if(target < nums[mid]){
+      return this.binarySearch(nums, target, start, mid-1);
+    }
   }
 }
 
 let solution = new MySolution();
 let arr = [1,2,3,4,5];
-console.log(solution.binarySearch(arr, 3, 0, arr.length));
+console.log(solution.binarySearch(arr, 0, 0, arr.length));
 
 // Do not edit this line;
 let StudentSolution = MySolution;
