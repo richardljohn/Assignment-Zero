@@ -21,10 +21,6 @@ class MySolution {
   }
 }
 
-let solution = new MySolution();
-let arr = [1,2,3,4,5];
-console.log(solution.binarySearch(arr, 9));
-
 // Do not edit this line;
 let StudentSolution = MySolution;
 module.exports = StudentSolution;
